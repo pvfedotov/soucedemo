@@ -20,6 +20,10 @@ jobs:
       - name: Install Playwright
         run: mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps"
       - name: Run tests
+        env:
+          SWAG_LOCKED_USER: ${{ secrets.SWAG_LOCKED_USER }}
+          SWAG_PASSWORD: ${{ secrets.SWAG_PASSWORD }}
+          SWAG_STANDARD_USER: ${{ secrets.SWAG_STANDARD_USER }}
         run: mvn test
       - name: Build test report
         uses: simple-elf/allure-report-action@v1.7
