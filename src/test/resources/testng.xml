@@ -1,0 +1,65 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PlaywrightAutoTests" verbose="1" parallel="tests" thread-count="5" >
+
+    <test name="FirefoxTests">
+        <parameter name="browser" value="firefox" />
+        <parameter name="headless" value="1" />
+        <classes>
+            <class name="org.playground.AuthenticationTest" />
+            <class name="org.playground.ProductsTest" />
+            <class name="org.playground.BurgerMenuTest" />
+            <class name="org.playground.CartPageTest" />
+            <class name="org.playground.CheckoutPersonTest" />
+            <class name="org.playground.CheckoutE2ETest" />
+        </classes>
+    </test>
+    <test name="ChromeTests">
+        <parameter name="browser" value="chrome" />
+        <parameter name="headless" value="1" />
+        <classes>
+            <class name="org.playground.AuthenticationTest" />
+            <class name="org.playground.ProductsTest" />
+            <class name="org.playground.BurgerMenuTest" />
+            <class name="org.playground.CartPageTest" />
+            <class name="org.playground.CheckoutPersonTest" />
+            <class name="org.playground.CheckoutE2ETest" />
+        </classes>
+    </test>
+    <test name="SafariTests">
+        <parameter name="browser" value="safari" />
+        <parameter name="headless" value="1" />
+        <classes>
+            <class name="org.playground.AuthenticationTest" />
+            <class name="org.playground.ProductsTest" />
+            <class name="org.playground.BurgerMenuTest" />
+            <class name="org.playground.CartPageTest" />
+            <class name="org.playground.CheckoutPersonTest" />
+            <class name="org.playground.CheckoutE2ETest" />
+        </classes>
+    </test>
+    <test name="EdgeTests">
+        <parameter name="browser" value="edge" />
+        <parameter name="headless" value="1" />
+        <classes>
+            <class name="org.playground.AuthenticationTest" />
+            <class name="org.playground.ProductsTest" />
+            <class name="org.playground.BurgerMenuTest" />
+            <class name="org.playground.CartPageTest" />
+            <class name="org.playground.CheckoutPersonTest" />
+            <class name="org.playground.CheckoutE2ETest" />
+        </classes>
+    </test>
+    <test name="ChromiumTests">
+        <parameter name="browser" value="chromium" />
+        <parameter name="headless" value="1" />
+        <classes>
+            <class name="org.playground.AuthenticationTest" />
+            <class name="org.playground.ProductsTest" />
+            <class name="org.playground.BurgerMenuTest" />
+            <class name="org.playground.CartPageTest" />
+            <class name="org.playground.CheckoutPersonTest" />
+            <class name="org.playground.CheckoutE2ETest" />
+        </classes>
+    </test>
+</suite>
