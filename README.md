@@ -32,7 +32,6 @@ Run test `mvn test`
 Generate allure report  - `allure serve target/allure-results`
 
 ##Next steps:
-- Enable Vault support to store secrets
 - Concider use Cucumber for better test readability
 - Enable multi environments support
 - Integrate with Selenium Grid https://playwright.dev/java/docs/selenium-grid
