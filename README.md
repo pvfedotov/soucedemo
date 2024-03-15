@@ -15,7 +15,6 @@ This is test suite for SauceDemo application.
 ## Features
  - Page Object Model
  - Allure report
- - Selenoid support
  - Cross-browser testing
  - Headless mode
  - Parallel testing
@@ -30,6 +29,7 @@ This is test suite for SauceDemo application.
 Run test `mvn test`
 
 Generate allure report  - `allure serve target/allure-results`
+
 
 ##Next steps:
 - Concider use Cucumber for better test readability
